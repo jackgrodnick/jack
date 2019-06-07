@@ -5,6 +5,58 @@ html, body {
   height: 100%;
   cursor: crosshair !important;
 }
+/*dark mode switch*/
+.switch {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: white;
+  transition: .5s;
+  border: 2px solid black;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  top: 4px;
+  background: black;
+  transition: .5s;
+}
+
+.switch input {
+  visibility: hidden;
+}
+
+input:checked + .slider {
+  background-color: black;
+  border: 2px solid white;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px) rotateZ(45deg);
+  background: white;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  width: 43%;
+  height: 43%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotateZ(-45deg);
+}
 
 /* dark mode */
 
@@ -15,10 +67,6 @@ right: 50px;
 
 
 html {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
 	background: var(--lightBg);
 	--lightBtn: #000;
 	--lightBg: #fff;
@@ -39,38 +87,6 @@ h3 {
 	text-transform: uppercase;
 }
 
-input[type="checkbox"] {
-	height: 0;
-	width: 0;
-	visibility: hidden;
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 55px;
-	height: 30px;
-	background: var(--lightBtn);
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100px;
-	position: relative;
-}
-
-label:after {
-	content: "";
-	background: lime;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	position: absolute;
-	top: 5px;
-	left: 4px;
-	transition: ease-in-out 200ms;
-}
-
 input:checked + label {
 	background: #fff;
 }
@@ -87,6 +103,8 @@ html.transition *:after {
 	transition: ease-in-out 200ms !important;
 	transition-delay: 0 !important;
 }
+
+/*end of dark mode*/
 
 
 
