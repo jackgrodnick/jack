@@ -4,7 +4,14 @@ html, body {
   width: 100%;
   height: 100%;
   cursor: crosshair !important;
+    scroll-behavior: smooth !important;
 }
+
+html {
+  scroll-behavior: smooth !important;
+ }
+
+
 
 .introofido {
   white-space: nowrap;
@@ -222,7 +229,6 @@ body {
 
 
 .content {
-  height: 200vh;
   position: absolute;
   width: 80%;
   margin: 0 auto;
@@ -361,8 +367,12 @@ body {
   }
 }
 
-nav {
-  display: none;
+.home {
+  height: 100vh;
 }
 
-/* word ive done*/
+/*about*/
+
+.about {
+  height: 100vh;
+}

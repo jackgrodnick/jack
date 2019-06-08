@@ -16,15 +16,6 @@
   </head>
   <body onload="followMouse()">
 
-    <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
-  </nav>
-
     <div class="wrapc">
       <div id="ball">
 
@@ -49,23 +40,24 @@
       </div>
 
 <!-- home page -->
-
+<div class="allpages fixedstuff" id="box">
+<div class="home">
 <div class="containe">
-  <p class="light" id="modesforpage">Dark &nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
+  <p class="light" id="modesforpage"></p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
 </div>
 
-      <div class="fixedstuff content home" id="box">
+      <div class="content home">
         <p>Hi! 👋 I'm Jack</p>
         <h1 class="introofido">I Make<br>Brands Matter<br>In The Digital World</h1>
         <p id="home-p"class="data">
           Front End / Web Designer / WordPress
         </p>
       </div>
-
-      <ion-icon id="arrow" name="arrow-down"></ion-icon>
+<a href="#down"><ion-icon id="arrow" name="arrow-down"></ion-icon></a>
+      </div>
 
 <!-- about page -->
-      <div class="about">
+      <div class="about" id="down">
 
       </div>
 
@@ -78,6 +70,7 @@
 
           <div class="contact-me">
 
+          </div>
           </div>
 
 
@@ -227,8 +220,6 @@
 
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-
 <script type="text/javascript">
 
 
@@ -265,7 +256,6 @@ document.documentElement.classList.remove('transition');
 }
 
 </script>
-
 
   </body>
 </html>
