@@ -7,10 +7,12 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/db6a90e6dd.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
   </head>
   <body onload="followMouse()">
 
@@ -47,20 +49,20 @@
       </div>
 
 <!-- home page -->
+
 <div class="containe">
-  <h3>Black & White</h3>
-  <label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span>Toggle</label>
+  <p class="light" id="modesforpage">Dark &nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
 </div>
 
       <div class="fixedstuff content home" id="box">
-
-
-        <h1>Hi,<br>I'm Jack,<br>Web designer.</h1>
-        <p class="data">
+        <p>Hi! 👋 I'm Jack</p>
+        <h1 class="introofido">I Make<br>Brands Matter<br>In The Digital World</h1>
+        <p id="home-p"class="data">
           Front End / Web Designer / WordPress
-
         </p>
       </div>
+
+      <ion-icon id="arrow" name="arrow-down"></ion-icon>
 
 <!-- about page -->
       <div class="about">
@@ -159,7 +161,23 @@
       delay: 3.2,
       ease: Power2.easeInOut
     });
+
+    TweenMax.from("#arrow", 2, {
+      y: 300,
+      delay: 3.2,
+      opacity: 0,
+      ease: Power2.easeInOut
+    });
+
+    TweenMax.to("#arrow", 2, {
+      opacity: 1,
+      y: 0,
+      delay: 3.2,
+      ease: Power2.easeInOut
+    });
   }
+
+
 </script>
 
 <script type="text/javascript">

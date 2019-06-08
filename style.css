@@ -5,6 +5,29 @@ html, body {
   height: 100%;
   cursor: crosshair !important;
 }
+
+.introofido {
+  white-space: nowrap;
+}
+
+#modesforpage {
+  display: inline;
+}
+
+#home-p {
+  font-size: 11px;
+  line-height: 20px;
+  color: var(--lightcl);
+}
+
+#arrow {
+  position: absolute;
+  bottom: 13%;
+  right: 7%;
+  font-size: 20px;
+  animation: arrowupdown 1.5s infinite alternate;
+  color: var(--lightcl);
+}
 /*dark mode switch*/
 .switch {
   position: relative;
@@ -12,12 +35,13 @@ html, body {
   width: 50px;
   height: 30px;
   margin-bottom: 30px;
+  display: inline-block
 }
 
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0; 
+  top: 0; left: 0; right: 0; bottom: 0;
   background: white;
   transition: .5s;
   border: 2px solid black;
@@ -28,7 +52,7 @@ html, body {
   content: "";
   bottom: 14px;
   top: 4px;
-  background: black;
+  background: var(--lightcl);
   transition: .5s;
 }
 
@@ -43,7 +67,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(25px) rotateZ(45deg);
-  background: white;
+  background: var(--lightcl);
 }
 
 .slider.round {
@@ -62,7 +86,8 @@ input:checked + .slider:before {
 
 .containe {
   position: absolute;
-right: 50px;
+  left: 10%;
+  top: 10%;
 }
 
 
@@ -71,12 +96,14 @@ html {
 	--lightBtn: #000;
 	--lightBg: #fff;
 	--lightColor: #000;
+  --lightcl: #fb0953;
 }
 
 html[data-theme="dark"] {
 	background: var(--lightBg);
 	--lightBg: #000;
 	--lightColor: #fff;
+  --lightcl: #09fcd6;
 }
 
 h3 {
@@ -130,44 +157,6 @@ body {
     cursor: crosshair !important;
 }
 
-nav{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  margin: 0 auto;
-  width: 100%;
-  background-color: #222;
-    cursor: crosshair !important;
-}
-
-nav ul{
-  list-style-type: none;
-  text-align: center;
-    cursor: crosshair !important;
-}
-
-nav ul li{
-  display: inline-block;
-  text-align: center;
-  padding: 20px;
-  height: 2%;
-    cursor: crosshair !important;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: white;
-  padding: 20px;
-    cursor: crosshair !important;
-}
-
-/* an underline appears at the bottom on hover of each link */
-nav ul li a:hover, nav ul li a:active{
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 8px;
-    cursor: crosshair !important;
-}
-
 @keyframes ballinout {
   from {
     transform: scale(1);
@@ -177,11 +166,20 @@ nav ul li a:hover, nav ul li a:active{
   }
 }
 
+@keyframes arrowupdown {
+  from {
+    bottom: 13%;
+  }
+  to {
+    bottom: 10%;
+  }
+}
+
 #ball {
   width: 60px;
   height: 60px;
   background: none;
-  border: 1px solid grey;
+  border: 1px solid var(--lightColor);
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -226,7 +224,7 @@ nav ul li a:hover, nav ul li a:active{
 .content {
   height: 200vh;
   position: absolute;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   top: 60%;
   left: 10%;
@@ -236,21 +234,26 @@ nav ul li a:hover, nav ul li a:active{
 
 .content h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 54px;
+  font-size: 70px;
   color: var(--lightColor);
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 900;
   margin-bottom: 10px;
   margin-top: 0;
     cursor: crosshair !important;
+    letter-spacing: 3px;
+    word-spacing: 13px;
+    line-height: 83px;
 }
 
 .content p {
   margin-top: 0;
   text-align: left;
   color: var(--lightColor);
-  font-weight: 400;
+  font-weight: 700;
     cursor: crosshair !important;
+    font-size: 14px;
+    word-spacing: 2.5px;
+    letter-spacing: .5px;
 }
 
 .overlay-2 {
