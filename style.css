@@ -12,12 +12,17 @@ html {
   -webkit-scroll-behavior: smooth !important;
  }
 
+ .Artboard_1 {
+   display: none
+ }
+
 svg {
-  width: 6%;
+  width: 26px;
     height: 6%;
     position: absolute;
-    top: 27px;
-    left: 0;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 .colorsvg {
@@ -46,9 +51,9 @@ svg {
 #arrow {
   position: absolute;
   bottom: 13%;
-  right: 7%;
+  right: 10%;
   font-size: 20px;
-  animation: arrowupdown 1.5s infinite alternate;
+  animation: arrowupdown 1.8s infinite alternate;
   color: var(--lightcl);
 }
 /*dark mode switch*/
@@ -109,8 +114,8 @@ input:checked + .slider:before {
 
 .containe {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 0;
+  top: 0;
 }
 
 
@@ -191,10 +196,10 @@ body {
 
 @keyframes arrowupdown {
   from {
-    bottom: 13%;
+    bottom: 14%;
   }
   to {
-    bottom: 10%;
+    bottom: 9%;
   }
 }
 
@@ -383,7 +388,7 @@ body {
   .content h1 {
     font-size: 24px;
     line-height: 38px;
-    word-spacing: 10px;
+    word-spacing: 5px;
     letter-spacing: 1px;
   }
   .content p {
