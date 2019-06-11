@@ -392,8 +392,11 @@ body {
     letter-spacing: 1px;
   }
   .content p {
-    font-size: 13px;
+    font-size: 8px;
     word-spacing: 1.5px;
+  }
+  #home-p {
+    font-size: 9px;
   }
 }
 
