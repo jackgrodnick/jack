@@ -386,17 +386,17 @@ body {
     display: none;
   }
   .content h1 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 38px;
     word-spacing: 5px;
     letter-spacing: 1px;
   }
   .content p {
-    font-size: 8px;
+    font-size: 10px;
     word-spacing: 1.5px;
   }
   #home-p {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 
