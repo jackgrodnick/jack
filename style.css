@@ -7,17 +7,16 @@ html, body {
     scroll-behavior: smooth !important;
 }
 
+
+
 html {
   scroll-behavior: smooth !important;
   -webkit-scroll-behavior: smooth !important;
  }
 
- .Artboard_1 {
-   display: none
- }
 
 svg {
-  width: 420px;
+  width: 430px;
 height: 45%;
     position: absolute;
     top: 0;
