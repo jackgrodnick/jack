@@ -69,7 +69,7 @@ height: 45%;
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
   background: white;
-  transition: .5s;
+  transition: 200ms;
   border: 2px solid black;
 }
 
@@ -79,7 +79,7 @@ height: 45%;
   bottom: 14px;
   top: 4px;
   background: var(--lightcl);
-  transition: .5s;
+  transition: 200ms;
 }
 
 .switch input {
@@ -153,7 +153,7 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-	transition: ease-in-out 200ms !important;
+	transition: ease-in-out 300ms !important;
 	transition-delay: 0 !important;
 }
 
@@ -316,6 +316,13 @@ body {
     cursor: crosshair !important;
 }
 
+.myBtn2 {
+  font-family: 'Poppins', sans-serif;
+  top: 2%;
+  right: 2%;
+    cursor: crosshair !important;
+}
+
 .myBtn {
   display: block;
   padding: 24px 48px;
@@ -331,9 +338,31 @@ body {
   background: none;
   z-index: 1;
   cursor: crosshair;
-  transition: 0.8s ease-out;
-    cursor: crosshair !important;
-        max-width: 100%;
+  transition: color 0.8s ease-out;
+  cursor: crosshair !important;
+  max-width: 100%;
+
+}
+
+.myBtn2 {
+  display: block;
+  padding: 14px 34px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--lightColor);
+  border: 2px solid var(--lightColor);
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  background: none;
+  cursor: crosshair;
+  transition: color 0.8s ease-out;
+  cursor: crosshair !important;
+  max-width: 100%;
+  position: sticky;
+  float: right;
 
 }
 
@@ -341,6 +370,13 @@ body {
 .myBtn:hover {
   cursor: crosshair;
   color: white;
+    cursor: crosshair !important;
+
+}
+
+.myBtn2:hover {
+  cursor: crosshair;
+  color: var(--lightBg);
     cursor: crosshair !important;
 
 }
@@ -359,7 +395,26 @@ body {
 
 }
 
+.myBtn2:before {
+  content: "";
+  position: absolute;
+  background: var(--lightColor);
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: top 0.8s ease-out;
+    cursor: crosshair !important;
+
+}
+
 .myBtn:hover:before {
+  top: 0;
+    cursor: crosshair !important;
+}
+
+.myBtn2:hover:before {
   top: 0;
     cursor: crosshair !important;
 }
