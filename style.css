@@ -37,7 +37,11 @@ height: 45%;
 }
 
 #modesforpage {
+  letter-spacing: 0.1px;
   display: inline;
+  font-size: 18px;
+  font-weight: 900;
+  word-spacing: 1px;
 }
 
 #home-p {
@@ -61,7 +65,8 @@ height: 45%;
   width: 50px;
   height: 30px;
   margin-bottom: 30px;
-  display: inline-block
+  display: inline-block;
+  top: -2px;
 }
 
 .slider {
@@ -111,9 +116,9 @@ input:checked + .slider:before {
 /* dark mode */
 
 .containe {
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 0;
+  top: 50px;
 }
 
 
@@ -485,6 +490,7 @@ body {
   .switch {
     width: 32.5px;
     height: 19.5px;
+    top: 4px;
   }
   .slider.round {
     border-radius: 22.75px;
@@ -495,6 +501,9 @@ body {
 input:checked + .slider:before {
     transform: translateX(16px) rotateZ(45deg);
   }
+  #modesforpage {
+    font-size: 14px;
+ }
 }
 
 .home {

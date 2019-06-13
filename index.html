@@ -59,9 +59,6 @@
 <div class="home">
 
     <h1 class="homebox">HOME</h1>
-<div class="containe">
-  <p class="light" id="modesforpage"></p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
-</div>
 
       <div class="content">
         <p>Hi! 👋 I'm Jack</p>
@@ -69,6 +66,9 @@
         <p id="home-p"class="data">
           Front End / Web Designer / WordPress
         </p>
+        <div class="containe">
+          <p class="light" id="modesforpage">DARK MODE:&nbsp&nbsp&nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
+        </div>
       </div>
 <a href="#down"><ion-icon id="arrow" name="arrow-down"></ion-icon></a>
       </div>
@@ -103,6 +103,7 @@
     function someFunc() {
         fadeOut();
         setTimeout(removeClass, 3500);
+        cursorsonsite();
     }
 
     var box = document.getElementById("box");
@@ -160,20 +161,6 @@
       ease: Power2.easeInOut
     });
 
-    TweenMax.from(".containe", 2, {
-      y: 300,
-      delay: 3.2,
-      opacity: 0,
-      ease: Power2.easeInOut
-    });
-
-    TweenMax.to(".containe", 2, {
-      opacity: 1,
-      y: 0,
-      delay: 3.2,
-      ease: Power2.easeInOut
-    });
-
     TweenMax.from("#arrow", 2, {
       y: 300,
       delay: 3.2,
@@ -196,20 +183,6 @@
     });
 
     TweenMax.to(".myBtn2", 2, {
-      opacity: 1,
-      y: 0,
-      delay: 3.2,
-      ease: Power2.easeInOut
-    });
-
-    TweenMax.from(".svgs", 2, {
-      y: 300,
-      delay: 3.2,
-      opacity: 0,
-      ease: Power2.easeInOut
-    });
-
-    TweenMax.to(".svgs", 2, {
       opacity: 1,
       y: 0,
       delay: 3.2,
@@ -302,6 +275,13 @@ document.documentElement.classList.remove('transition');
 }, 1000)
 }
 
+</script>
+
+<script type="text/javascript">
+
+function cursorsonsite() {
+  document.body.style.cursor = 'crosshair';
+}
 </script>
 
   </body>
