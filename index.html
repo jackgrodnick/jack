@@ -55,6 +55,23 @@
 
 <!-- home page -->
 <div class="allpages fixedstuff" id="box">
+  <svg id="screen2" class="scc" xmlns="http://www.w3.org/2000/svg" width="1365" height="1273" viewBox="0 0 1365 1273">
+    <defs>
+      <style>
+        .scc {
+          font-size: 347px;
+          font-family: 'Roboto', sans-serif;;
+          font-weight: 900;
+          background: var(--lightColor);
+          fill: var(--lightBg);
+          padding: 10px;
+        }
+      </style>
+    </defs>
+    <g id="Artboard_1" data-name="Artboard 1">
+      <text id="JG" class="cls-1" transform="matrix(2.928, -1.182, -1.23, 3.707, -77.418, 1335.514)">JG</text>
+    </g>
+  </svg>
   <a href="mailto:jack.grodnick@gmail.com?subject=Hi Jack"><button class="myBtn2">START A PROJECT</button></a>
 <div class="home">
 
@@ -70,7 +87,7 @@
           <p class="light" id="modesforpage">DARK MODE:&nbsp&nbsp&nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
         </div>
       </div>
-<a href="#down"><ion-icon id="arrow" name="arrow-down"></ion-icon></a>
+<a class ="downs" href="#down"><ion-icon id="arrow" name="arrow-down"></ion-icon></a>
       </div>
 
 <!-- about page -->
@@ -104,6 +121,7 @@
         fadeOut();
         setTimeout(removeClass, 3500);
         cursorsonsite();
+        g();
     }
 
     var box = document.getElementById("box");
@@ -183,6 +201,20 @@
     });
 
     TweenMax.to(".myBtn2", 2, {
+      opacity: 1,
+      y: 0,
+      delay: 3.2,
+      ease: Power2.easeInOut
+    });
+
+    TweenMax.from(".scc", 2, {
+      y: 300,
+      delay: 3.2,
+      opacity: 0,
+      ease: Power2.easeInOut
+    });
+
+    TweenMax.to(".scc", 2, {
       opacity: 1,
       y: 0,
       delay: 3.2,
@@ -282,6 +314,7 @@ document.documentElement.classList.remove('transition');
 function cursorsonsite() {
   document.body.style.cursor = 'crosshair';
 }
+
 </script>
 
   </body>

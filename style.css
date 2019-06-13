@@ -15,7 +15,7 @@ html {
  }
 
 
-svg {
+svg.svs {
   width: 430px;
 height: 45%;
     position: absolute;
@@ -435,13 +435,17 @@ body {
   .content h1 {
     font-size: 55px;
   }
+  .scc {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   #screen {
     font-size: 200px !important;
   }
-  svg {
+  svg.svs {
     width: 262px;
     height: 53%;
       position: absolute;
@@ -450,6 +454,10 @@ body {
   }
   .content h1 {
     font-size: 40px;
+  }
+  .scc {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -473,7 +481,7 @@ body {
   #home-p {
     font-size: 11px;
   }
-  svg {
+  svg.svs {
     width: 262px;
     height: 34%;
       position: absolute;
@@ -483,6 +491,7 @@ body {
   .myBtn2 {
     padding: 12px 20px;
     font-size: 8px;
+    margin-top: 16px;
   }
   .myBtn {
     padding: 19px 33px;
@@ -504,6 +513,17 @@ input:checked + .slider:before {
   #modesforpage {
     font-size: 14px;
  }
+ .scc {
+   width: 45px !important;
+   height: 45px !important;
+ }
+}
+
+.scc {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
 }
 
 .home {
