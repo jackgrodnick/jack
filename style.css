@@ -328,7 +328,7 @@ body {
   right: 0% !important;
     cursor: crosshair !important;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 13.5px;
 }
 
 .myBtn {
@@ -491,7 +491,7 @@ body {
   .myBtn2 {
     padding: 12px 20px;
     font-size: 8px;
-    margin-top: 16px;
+    margin-top: 11px;
   }
   .myBtn {
     padding: 19px 33px;
@@ -517,6 +517,9 @@ input:checked + .slider:before {
    width: 45px !important;
    height: 45px !important;
  }
+ nav {
+   height: 65px !important;
+ }
 }
 
 .scc {
@@ -535,4 +538,12 @@ input:checked + .slider:before {
 
 .about {
   height: 100vh;
+}
+
+nav {
+  background: var(--lightBg);
+  z-index: 1;
+height: 80px;
+position: fixed;
+width: -webkit-fill-available;
 }
