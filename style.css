@@ -362,6 +362,7 @@ body {
   cursor: crosshair !important;
   max-width: 100%;
   position: sticky;
+  position: -webkit-sticky;
   float: right;
 
 }
