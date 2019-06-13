@@ -480,7 +480,7 @@ body {
     border-radius: 22.75px;
 }
 .slider::before {
-    top: 3px;
+    top: 2.7px;
 }
 input:checked + .slider:before {
     transform: translateX(16px) rotateZ(45deg);
