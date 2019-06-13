@@ -472,11 +472,25 @@ body {
     padding: 12px 20px;
     font-size: 8px;
   }
+  .switch {
+    width: 32.5px;
+    height: 19.5px;
+  }
+  .slider.round {
+    border-radius: 22.75px;
+}
+.slider::before {
+    top: 3px;
+}
+input:checked + .slider:before {
+    transform: translateX(16px) rotateZ(45deg);
+  }
 }
 
 .home {
   height: 100vh;
 }
+
 
 /*about*/
 
