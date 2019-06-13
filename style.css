@@ -173,7 +173,7 @@ body {
 }
 
 .fixedstuff {
-/*  position: fixed !important; */
+ position: fixed !important; 
   overflow: hidden !important;
   height: 100vh;
 /*  width: 60%;
