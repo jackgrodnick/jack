@@ -472,6 +472,9 @@ body {
     padding: 12px 20px;
     font-size: 8px;
   }
+  .myBtn {
+    padding: 19px 33px;
+  }
   .switch {
     width: 32.5px;
     height: 19.5px;
