@@ -171,17 +171,18 @@ body {
 .heightf {
   height: 100vh;
 }
-/* .fixedstuff {
-  position: fixed !important;
+
+.fixedstuff {
+/*  position: fixed !important; */
   overflow: hidden !important;
   height: 100vh;
-  width: 60%;
+/*  width: 60%;
   margin: 0 auto;
   top: 60%;
   left: 10%;
   transition: translate(0, -50%);
-    cursor: crosshair !important;
-} */
+    cursor: crosshair !important; */
+}
 
 @keyframes ballinout {
   from {
@@ -361,8 +362,7 @@ body {
   transition: color 0.8s ease-out;
   cursor: crosshair !important;
   max-width: 100%;
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   float: right;
 
 }
