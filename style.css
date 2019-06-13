@@ -318,8 +318,8 @@ body {
 
 .myBtn2 {
   font-family: 'Poppins', sans-serif;
-  top: 2%;
-  right: 2%;
+  top: 2% !important;
+  right: 2% !important;
     cursor: crosshair !important;
 }
 
