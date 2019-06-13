@@ -111,6 +111,7 @@ input:checked + .slider:before {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   transform: rotateZ(-45deg);
+  transition: transform ease-in-out 300ms !important;
 }
 
 /* dark mode */
@@ -158,9 +159,10 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-	transition: ease-in-out 300ms !important;
 	transition-delay: 0 !important;
+  transition: background-color ease-in-out 300ms !important;
 }
+
 
 /*end of dark mode*/
 
