@@ -83,6 +83,7 @@ height: 45%;
   width: 0px;
 position: absolute;
 height: 0;
+left: -70px
 }
 
 
@@ -568,6 +569,7 @@ input:checked + .slider:before {
   height: 60px;
   z-index: 1;
   visibility: visible !important;
+  left: 0;
 }
 
 .home {
