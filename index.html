@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jack Grodnick</title>
+    <script src="./src/minified/easing/CustomEase.min.js">
+
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -56,7 +60,7 @@
 <!-- home page -->
 <div class="allpages fixedstuff" id="box">
   <nav class="notreallyanav">
-  <svg id="screen2" class="scc" xmlns="http://www.w3.org/2000/svg" width="1365" height="1273" viewBox="0 0 1365 1273">
+  <label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"><svg id="screen2" class="scc" xmlns="http://www.w3.org/2000/svg" width="1365" height="1273" viewBox="0 0 1365 1273">
     <defs>
       <style>
         .scc {
@@ -72,9 +76,14 @@
     <g id="Artboard_1" data-name="Artboard 1">
       <text id="JG" class="cls-1" transform="matrix(2.928, -1.182, -1.23, 3.707, -77.418, 1335.514)">JG</text>
     </g>
-  </svg>
+  </svg></span></label>
   <a href="mailto:jack.grodnick@gmail.com?subject=Hi Jack"><button class="myBtn2">START A PROJECT</button></a>
 </nav>
+
+<div class="notification">
+<p class="notification-p">Click logo to turn dark<br>mode on and vice versa.</p>
+</div>
+
 <div class="home">
 
     <h1 class="homebox">HOME</h1>
@@ -85,9 +94,9 @@
         <p id="home-p"class="data">
           Front End / Web Designer / WordPress
         </p>
-        <div class="containe">
+      <!--  <div class="containe">
           <p class="light" id="modesforpage">DARK MODE:&nbsp&nbsp&nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
-        </div>
+        </div>  -->
       </div>
 <a class ="downs" href="#down"><ion-icon id="arrow" name="arrow-down"></ion-icon></a>
       </div>
@@ -123,7 +132,6 @@
         fadeOut();
         setTimeout(removeClass, 3500);
         cursorsonsite();
-        g();
     }
 
     var box = document.getElementById("box");
@@ -222,9 +230,19 @@
       delay: 3.2,
       ease: Power2.easeInOut
     });
+    TweenMax.to(".notification", 0.6, {
+      right: 0,
+      delay: 6,
+      ease: Back.easeOut
+    });
+
+    CustomEase.create("custom", "M0,0 C0.162,0 0.313,-0.058 0.474,-0.104 0.728,-0.178 0.936,0.576 1,1.318");
+    TweenMax.to(".notification", 0.6, {
+      right: -215,
+      delay: 12,
+      ease: "custom"
+    });
   }
-
-
 </script>
 
 <script type="text/javascript">
