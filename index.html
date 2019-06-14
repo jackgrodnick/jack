@@ -230,15 +230,17 @@
       delay: 3.2,
       ease: Power2.easeInOut
     });
+
+    CustomEase.create("custom2", "M0,0 C0.128,0.572 0.257,1.132 0.512,1.206 0.672,1.252 0.838,1 1,1");
     TweenMax.to(".notification", 0.6, {
       right: 0,
       delay: 6,
-      ease: Back.easeOut
+      ease: "custom2"
     });
 
-    CustomEase.create("custom", "M0,0 C0.162,0 0.313,-0.058 0.474,-0.104 0.728,-0.178 0.936,0.576 1,1.318");
+    CustomEase.create("custom", "M0,0 C0.162,0 0.313,-0.198 0.474,-0.244 0.728,-0.318 0.936,0.576 1,1.318");
     TweenMax.to(".notification", 0.6, {
-      right: -215,
+      right: -175,
       delay: 12,
       ease: "custom"
     });
