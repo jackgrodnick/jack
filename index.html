@@ -379,17 +379,16 @@ function cursorsonsite() {
 
   });
 
-    tl2.from("#test-line", 1, {
+    tl2.from("#test-line", .5, {
       opacity: 0,
       scale: 0
-    });
+    })
 
-    tl2.to("#test-line", .0, {
+    tl2.to("#test-line", 1, {
       opacity: 1,
-      rotation: 45,
-      scale: 1.3,
       backgroundColor: 'black',
-      right: 100,
+      scale: 1.3,
+      rotation: 45,
       ease: Power2.easeInOut
     });
 
