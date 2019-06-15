@@ -68,7 +68,6 @@ height: 45%;
   display: inline-block;
   top: -2px;
 }
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -161,17 +160,17 @@ input:checked + .slider:before {
 
 html {
 	background: var(--lightBg);
-	--lightBtn: #000;
-	--lightBg: #fff;
-	--lightColor: #000;
-  --lightcl: #fb0953;
+	--lightBtn: #fff;
+	--lightBg: #171717;
+	--lightColor: #fff;
+  --lightcl: #f8cf48;
 }
 
 html[data-theme="dark"] {
 	background: var(--lightBg);
-	--lightBg: #000;
-	--lightColor: #fff;
-  --lightcl: #09fcd6;
+	--lightBg: #fff;
+	--lightColor: #171717;
+  --lightcl: #f8cf48;
 }
 
 h3 {
@@ -196,7 +195,7 @@ html.transition *,
 html.transition *:before,
 html.transition *:after {
 	transition-delay: 0 !important;
-  transition: background-color ease-in-out 300ms !important;
+  transition: background-color ease-in-out 500ms !important;
 }
 
 
@@ -278,7 +277,7 @@ body {
 }
 
 #screen {
-  color: #252627;
+  fill: #fff;
   font-family: 'Poppins', sans-serif;
   position: absolute;
   top: 40%;
@@ -330,7 +329,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fb0953;
+  background: #f8cf48;
     cursor: crosshair !important;
 }
 
@@ -340,7 +339,7 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background: #fff;
+  background: #171717;
     cursor: crosshair !important;
 }
 
@@ -366,8 +365,8 @@ body {
   top: 0% !important;
   right: 0% !important;
     cursor: crosshair !important;
-    margin-right: 10px;
-    margin-top: 13.5px;
+    margin-right: 30px;
+    margin-top: 23.5px;
 }
 
 .myBtn {
@@ -377,8 +376,8 @@ body {
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 6px;
-  color: #000;
-  border: 2px solid #000;
+  color: #fff;
+  border: 2px solid #f8cf48;
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
@@ -400,7 +399,7 @@ body {
   font-size: 12px;
   letter-spacing: 2px;
   color: var(--lightColor);
-  border: 2px solid var(--lightColor);
+  border: 2px solid var(--lightcl);
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
@@ -417,7 +416,7 @@ body {
 
 .myBtn:hover {
   cursor: crosshair;
-  color: white;
+  color: #171717;
     cursor: crosshair !important;
 
 }
@@ -432,7 +431,7 @@ body {
 .myBtn:before {
   content: "";
   position: absolute;
-  background: #000;
+  background: #f8cf48;
   top: 100%;
   left: 0;
   right: 0;
@@ -446,7 +445,7 @@ body {
 .myBtn2:before {
   content: "";
   position: absolute;
-  background: var(--lightColor);
+  background: var(--lightcl);
   top: 100%;
   left: 0;
   right: 0;
@@ -477,6 +476,9 @@ body {
   .scc {
     width: 60px;
     height: 60px;
+  }
+  #ball {
+    display: none;
   }
 }
 
@@ -583,14 +585,6 @@ input:checked + .slider:before {
   height: 100vh;
 }
 
-nav {
-  background: var(--lightBg);
-  z-index: 1;
-height: 80px;
-position: fixed;
-width: -webkit-fill-available;
-}
-
 .notification {
   z-index: 1;
 position: fixed;
@@ -637,4 +631,19 @@ border-radius: 10px;
   height: 100px;
   border: 5px solid lightgray;
   margin: auto;
+}
+
+.about-indicator {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  opacity: 0;
+}
+
+.about-indicator h4 {
+  font-size: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
