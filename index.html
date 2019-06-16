@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jack Grodnick</title>
     <script src="./src/minified/easing/CustomEase.min.js">
-
     </script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -146,131 +145,107 @@
         setTimeout(removeClass, 3500);
         cursorsonsite();
     }
-
     var box = document.getElementById("box");
     var cList = box.classList.toString();
-
     function removeClass() {
       box.classList.remove("fixedstuff");
     }
-
-
 </script>
 <script type="text/javascript">
-
   function fadeOut() {
-
     TweenMax.to(".myBtn", 1, {
       y: -100,
       opacity: 0
     });
-
     TweenMax.to("svg#screen", 2, {
       y: -400,
       opacity: 0,
       ease: Power2.easeInOut,
       delay: 2
     });
-
     TweenMax.from(".overlay", 2, {
       ease: Power2.easeInOut
     });
-
     TweenMax.to(".overlay", 2, {
       delay: 2.6,
       top: "-115%",
       ease: Expo.easeInOut
     });
-
     TweenMax.to(".overlay-2", 2, {
       delay: 3,
       top: "-115%",
       ease: Expo.easeInOut
     });
-
     TweenMax.from(".content", 2, {
       y: 300,
       delay: 3.2,
       opacity: 0,
       ease: Power2.easeInOut
     });
-
     TweenMax.to(".content", 2, {
       opacity: 1,
       y: 0,
       delay: 3.2,
       ease: Power2.easeInOut
     });
-
     TweenMax.from("#arrow", 2, {
       y: 300,
       delay: 3.2,
       opacity: 0,
       ease: Power2.easeInOut
     });
-
     TweenMax.to("#arrow", 2, {
       opacity: 1,
       y: 0,
       delay: 3.2,
       ease: Power2.easeInOut
     });
-
     TweenMax.from(".myBtn2", 2, {
       y: 300,
       delay: 3.2,
       opacity: 0,
       ease: Power2.easeInOut
     });
-
     TweenMax.to(".myBtn2", 2, {
       opacity: 1,
       y: 0,
       delay: 3.2,
       ease: Power2.easeInOut
     });
-
     TweenMax.from(".scc", 2, {
       y: 300,
       delay: 3.2,
       opacity: 0,
       ease: Power2.easeInOut
     });
-
     TweenMax.to(".scc", 2, {
       opacity: 1,
       y: 0,
       delay: 3.2,
       ease: Power2.easeInOut
     });
-
     CustomEase.create("custom2", "M0,0 C0.128,0.572 0.257,1.132 0.512,1.206 0.672,1.252 0.838,1 1,1");
     TweenMax.to(".notification", 0.6, {
       right: 0,
       delay: 6,
       ease: "custom2"
     });
-
     CustomEase.create("custom", "M0,0 C0.162,0 0.313,-0.198 0.474,-0.244 0.728,-0.318 0.936,0.576 1,1.318");
     TweenMax.to(".notification", 0.6, {
       right: -175,
       delay: 14,
       ease: "custom"
     });
-
   TweenMax.to(".notification", 0.6, {
     bottom: 80,
     delay: 10.4,
     ease: Power2.easeInOut
   });
-
-
   TweenMax.to(".notification2", 0.6, {
     right: 0,
     delay: 11,
     ease: "custom2"
   });
-
   TweenMax.to(".notification2", 0.6, {
     right: -175,
     delay: 19,
@@ -280,16 +255,13 @@
 </script>
 
 <script type="text/javascript">
-
   var $ = document.querySelector.bind(document);
   var $on = document.addEventListener.bind(document);
-
   var xmouse, ymouse;
   $on('mousemove', function (e) {
     xmouse = e.clientX || e.pageX;
     ymouse = e.clientY || e.pageY;
   });
-
   var ball = $('#ball');
   var x = void 0,
   y = void 0,
@@ -298,10 +270,8 @@
   tx = 0,
   ty = 0,
   key = -1;
-
   var followMouse = function followMouse() {
     key = requestAnimationFrame(followMouse);
-
     if(!x || !y) {
       x = xmouse;
       y = ymouse;
@@ -319,16 +289,8 @@
     ball.style.left = x + 'px';
     ball.style.top = y + 'px';
   };
-
-
-
-
-
 </script>
 <script type="text/javascript">
-
-
-
     //  const text = baffle(".data");
   //    text.set({
   //          characters : '█▒▒ ░░░▓▓ >▒▓▒< <▒░ █▓▒██ >█░▒ █▒/ /█░▒ >█░░',
@@ -336,11 +298,6 @@
   //    });
 //      text.start();
   //    text.reveal(1000, 1400);
-
-
-
-
-
 </script>
 
 
@@ -363,36 +320,28 @@ window.setTimeout(() => {
 document.documentElement.classList.remove('transition');
 }, 1000)
 }
-
 </script>
 
 <script type="text/javascript">
-
 function cursorsonsite() {
   document.body.style.cursor = 'crosshair';
 }
-
 </script>
 
 <script type="text/javascript">
   var tl3 = new TimelineMax({onUpdate:updatePercentage});
   const controller = new ScrollMagic.Controller({
-
   });
-
   CustomEase.create("indicator1", "M0,0 C0,0.435 0,1 0.152,1 0.23,1 0.76,1 0.844,1 0.982,1 1,1 1,0");
   tl3.from("#about-indicator", 0.1, {
     opacity: 0,
   });
-
   tl3.to("#about-indicator", 0.1, {
     opacity: 1,
   });
-
   tl3.to("#about-indicator h4", 0.1, {
     opacity: 0,
   });
-
   const scene3 = new ScrollMagic.Scene({
     triggerElement: "#about-indicator",
     triggerHook: "onLeave",
@@ -401,23 +350,18 @@ function cursorsonsite() {
   .setPin("#about-indicator")
   .setTween(tl3)
     .addTo(controller);
-
     function updatePercentage() {
       tl3.progress();
       console.log(tl3.progress());
     }
-
-
 </script>
 
 <script type="text/javascript">
   var tl2 = new TimelineMax();
-
     tl2.from("#test-line", .5, {
       opacity: 0,
       scale: 0
     })
-
     tl2.to("#test-line", 1, {
       opacity: 1,
       backgroundColor: 'black',
@@ -425,7 +369,6 @@ function cursorsonsite() {
       rotation: 45,
       ease: Power2.easeInOut
     });
-
   const scene2 = new ScrollMagic.Scene({
     triggerElement: ".about"
   })
