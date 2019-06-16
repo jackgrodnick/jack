@@ -218,6 +218,7 @@ body {
 position: fixed !important;
  overflow: hidden !important;
  height: 100vh;
+ width: 100%;
 /*  width: 60%;
   margin: 0 auto;
   top: 60%;
