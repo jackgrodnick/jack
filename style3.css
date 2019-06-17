@@ -560,7 +560,7 @@ input:checked + .slider:before {
   height: 100vh;
   background: white;
   position: relative;
-  top: -140vh !important;
+  top: 100vh !important;
 }
 
 .about p {
@@ -616,18 +616,19 @@ border-radius: 10px;
 }
 
 .about-indicator {
-  position: relative;
+  position: fixed;
   margin: auto;
-  top: 0px;
+  top: 0px !important;
   left: 0px;
   bottom: auto;
   right: auto;
   box-sizing: border-box;
   width: 100%;
-  padding: 3em;
+  padding: 3em !important;
   background-color: white;
   height: 100vh;
   z-index: -1;
+  border-top: red solid 1px;
 }
 
 .about-indicator h4 {
@@ -639,10 +640,6 @@ border-radius: 10px;
   left: 50%;
   color: rgba(0,0,0,.08);
   transform: translate(-50%, -50%);
-}
-
-.scrollmagic-pin-spacer {
-  top: -90vh !important;
 }
 
 /* test code */
