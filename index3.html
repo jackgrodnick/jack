@@ -104,6 +104,8 @@
           <p class="light" id="modesforpage">DARK MODE:&nbsp&nbsp&nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
         </div>  -->
       </div>
+
+      <div id="trigger-about-indicator"></div>
 <!-- <a class ="downs" href="#down"><img id="arrow" src="/Users/jackgrodnick/Desktop/Jack/mouseindicator.png"></a> -->
       </div>
 
@@ -115,19 +117,31 @@
         <div id="test-line">
 
         </div>
-
+      <div id="trigger-about-indicator2"></div>
       </div>
+
+      <!-- my services page -->
+<div class="service-indicator" id="service-indicator"><h4>Services</h4></div>
+          <div class="service">
+            <p class="service-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
+            <div id="trigger-about-indicator3"></div>
+
+          </div>
 
       <!-- my work page -->
 <div class="my-work-indicator" id="my-work-indicator"><h4>Work</h4></div>
           <div class="my-work">
             <p class="my-work-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
-
+<div id="trigger-about-indicator4"></div>
           </div>
+
+
 
       <!-- contact page -->
 
           <div class="contact-me">
+
+  <div id="trigger-about-indicator5"></div>
 
           </div>
           </div>
@@ -344,7 +358,7 @@ function cursorsonsite() {
     opacity: 0,
   });
   const scene3 = new ScrollMagic.Scene({
-    triggerElement: ".content",
+    triggerElement: "#trigger-about-indicator",
     triggerHook: "onLeave",
     duration: "100%"
   })
@@ -382,27 +396,54 @@ function cursorsonsite() {
 <script type="text/javascript">
   var tl4 = new TimelineMax({onUpdate:updatePercentage});
 
-  tl4.from("#my-work-indicator", 0.1, {
+  tl4.from("#service-indicator", 0.1, {
     opacity: 0,
   });
-  tl4.to("#my-work-indicator", 0.1, {
+  tl4.to("#service-indicator", 0.1, {
     opacity: 1,
   });
-  tl4.to("#my-work-indicator h4", 0.1, {
+  tl4.to("#service-indicator h4", 0.1, {
     opacity: 0,
   });
 
   const scene4 = new ScrollMagic.Scene({
-    triggerElement: "#test-line",
+    triggerElement: "#trigger-about-indicator2",
     triggerHook: "onLeave",
     duration: "100%"
   })
-  .setPin("#my-work-indicator")
+  .setPin("#service-indicator")
   .setTween(tl4)
     .addTo(controller);
     function updatePercentage() {
       tl4.progress();
       console.log(tl4.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl5 = new TimelineMax({onUpdate:updatePercentage});
+
+  tl5.from("#my-work-indicator", 0.1, {
+    opacity: 0,
+  });
+  tl5.to("#my-work-indicator", 0.1, {
+    opacity: 1,
+  });
+  tl5.to("#my-work-indicator h4", 0.1, {
+    opacity: 0,
+  });
+
+  const scene5 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator3",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin("#service-indicator")
+  .setTween(tl5)
+    .addTo(controller);
+    function updatePercentage() {
+      tl4.progress();
+      console.log(tl5.progress());
     }
 </script>
 
