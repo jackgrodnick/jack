@@ -407,7 +407,7 @@ position: fixed !important;
     cursor: crosshair !important;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1365px) {
   #screen {
     font-size: 275px !important;
   }
@@ -423,6 +423,9 @@ position: fixed !important;
   }
   .dk {
     font-size: 223px !important;
+  }
+  .service p {
+    font-size: 54px !important;
   }
 }
 
@@ -451,6 +454,9 @@ position: fixed !important;
   }
   .dk {
     font-size: 170px !important;
+  }
+  .service p {
+    font-size: 41px !important;
   }
 }
 
@@ -515,8 +521,11 @@ input:checked + .slider:before {
  nav {
    height: 65px !important;
  }
- .dk {
-    font-size: 100px !important;
+  .service p {
+    font-size: 26px !important;
+    letter-spacing: 1px !important;
+    word-spacing: 1px !important;
+    line-height: 43px !important;
   }
 }
 
@@ -679,6 +688,16 @@ border-radius: 10px;
 
 .service p {
   margin: 0;
+  color: rgba(22,21,23,.2);
+  font-size: 100px;
+  position: absolute;
+  left: 6.5%;
+  letter-spacing: 3px;
+  word-spacing: 7px;
+}
+
+.main-thing-id {
+  color: white !important;
 }
 
 #trigger-about-indicator {
