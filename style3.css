@@ -680,7 +680,7 @@ border-radius: 10px;
 }
 
 .service {
-  height: 100vh;
+  height: 15vh;
   background: #f04e30;
   position: relative;
   top: 200vh !important;
@@ -694,6 +694,8 @@ border-radius: 10px;
   left: 6.5%;
   letter-spacing: 3px;
   word-spacing: 7px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .main-thing-id {
@@ -716,7 +718,6 @@ border-radius: 10px;
 
 #trigger-about-indicator3 {
   position: absolute;
-  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -765,7 +766,7 @@ border-radius: 10px;
   height: 100vh;
   background: #171717;
   position: relative;
-  top: 300vh !important;
+  top: 360vh !important;
 }
 
 .my-work p {
@@ -805,7 +806,7 @@ border-radius: 10px;
   height: 100vh;
   background: white;
   position: relative;
-  top: 400vh !important;
+  top: 450vh !important;
 }
 
 .contact-mek p {
