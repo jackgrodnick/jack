@@ -110,7 +110,7 @@
       </div>
 
 <!-- about page -->
-<div class="about-indicator" id="about-indicator"><h4>About</h4></div>
+<div class="about-indicator" id="about-indicator"><h4 class="dk">About</h4></div>
       <div class="about" id="down">
         <p class="about-me-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
 
@@ -121,7 +121,7 @@
       </div>
 
       <!-- my services page -->
-<div class="service-indicator" id="service-indicator"><h4>Services</h4></div>
+<div class="service-indicator" id="service-indicator"><h4 class="dk">Services</h4></div>
           <div class="service">
             <p class="service-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
             <div id="trigger-about-indicator3"></div>
@@ -129,7 +129,7 @@
           </div>
 
       <!-- my work page -->
-<div class="my-work-indicator" id="my-work-indicator"><h4>Work</h4></div>
+<div class="my-work-indicator" id="my-work-indicator"><h4 class="dk">Work</h4></div>
           <div class="my-work">
             <p class="my-work-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
 <div id="trigger-about-indicator4"></div>
@@ -138,12 +138,14 @@
 
 
       <!-- contact page -->
-
+<div class="contact-me-indicator" id="contact-me-indicator"><h4 class="dk">Contact</h4></div>
           <div class="contact-me">
+<p class="contact-me-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
 
-  <div id="trigger-about-indicator5"></div>
 
           </div>
+
+
           </div>
 
 
@@ -348,13 +350,13 @@ function cursorsonsite() {
   const controller = new ScrollMagic.Controller({
   });
   CustomEase.create("indicator1", "M0,0 C0,0.435 0,1 0.152,1 0.23,1 0.76,1 0.844,1 0.982,1 1,1 1,0");
-  tl3.from("#about-indicator", 0.1, {
+  tl3.from("#about-indicator", 0.2, {
     opacity: 0,
   });
-  tl3.to("#about-indicator", 0.1, {
+  tl3.to("#about-indicator", 0.2, {
     opacity: 1,
   });
-  tl3.to("#about-indicator h4", 0.1, {
+  tl3.to("#about-indicator h4", 0.2, {
     opacity: 0,
   });
   const scene3 = new ScrollMagic.Scene({
@@ -438,12 +440,39 @@ function cursorsonsite() {
     triggerHook: "onLeave",
     duration: "100%"
   })
-  .setPin("#service-indicator")
+  .setPin("#my-work-indicator")
   .setTween(tl5)
     .addTo(controller);
     function updatePercentage() {
-      tl4.progress();
+      tl5.progress();
       console.log(tl5.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl6 = new TimelineMax({onUpdate:updatePercentage});
+
+  tl6.from("#contact-me-indicator", 0.1, {
+    opacity: 0,
+  });
+  tl6.to("#contact-me-indicator", 0.1, {
+    opacity: 1,
+  });
+  tl6.to("#contact-me-indicator h4", 0.1, {
+    opacity: 0,
+  });
+
+  const scene6 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator4",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin("#contact-me-indicator")
+  .setTween(tl6)
+    .addTo(controller);
+    function updatePercentage() {
+      tl6.progress();
+      console.log(tl6.progress());
     }
 </script>
 

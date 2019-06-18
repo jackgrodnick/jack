@@ -421,13 +421,7 @@ position: fixed !important;
   #ball {
     display: none;
   }
-  .about-indicator h4 {
-    font-size: 223px !important;
-  }
-  .service-indicator h4 {
-    font-size: 223px !important;
-  }
-  .my-work-indicator h4 {
+  .dk {
     font-size: 223px !important;
   }
 }
@@ -452,16 +446,10 @@ position: fixed !important;
     width: 60px;
     height: 60px;
   }
-  .about-indicator h4 {
-    font-size: 170px !important;
-  }
   .content p {
     margin-bottom: 3px;
   }
-  .service-indicator h4 {
-    font-size: 170px !important;
-  }
-  .my-work-indicator h4 {
+  .dk {
     font-size: 170px !important;
   }
 }
@@ -527,27 +515,15 @@ input:checked + .slider:before {
  nav {
    height: 65px !important;
  }
- .about-indicator h4 {
+ .dk {
     font-size: 100px !important;
   }
-  .service-indicator h4 {
-     font-size: 100px !important;
-   }
-   .my-work-indicator h4 {
-      font-size: 100px !important;
-    }
 }
 
 @media screen and (max-width: 600px) {
-  .about-indicator h4 {
+  .dk {
      font-size: 70px !important;
    }
-   .service-indicator h4 {
-      font-size: 70px !important;
-    }
-    .my-work-indicator h4 {
-       font-size: 70px !important;
-     }
    #home-p {
     font-size: 8px;
 }
@@ -774,6 +750,46 @@ border-radius: 10px;
 }
 
 .my-work p {
+  margin: 0;
+  color: white;
+}
+
+
+
+.contact-me-indicator {
+  position: fixed;
+  margin: auto;
+  top: 0px !important;
+  left: 0px;
+  bottom: auto;
+  right: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3em !important;
+  background-color: white;
+  height: 100vh;
+  z-index: 0;
+}
+
+.contact-me-indicator h4 {
+  font-size: 300px;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgba(0,0,0,.08);
+  transform: translate(-50%, -50%);
+}
+
+.contact-me {
+  height: 100vh;
+  background: white;
+  position: relative;
+  top: 400vh !important;
+}
+
+.contact-mek p {
   margin: 0;
   color: white;
 }
