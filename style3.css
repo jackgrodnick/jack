@@ -509,6 +509,12 @@ input:checked + .slider:before {
  nav {
    height: 65px !important;
  }
+ .service p {
+   font-size: 26px !important;
+   letter-spacing: 1px !important;
+   word-spacing: 1px !important;
+   line-height: 43px !important;
+ }
 
 }
 
