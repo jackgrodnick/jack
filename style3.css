@@ -421,12 +421,6 @@ position: fixed !important;
   #ball {
     display: none;
   }
-  .dk {
-    font-size: 223px !important;
-  }
-  .service p {
-    font-size: 54px !important;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -451,12 +445,6 @@ position: fixed !important;
   }
   .content p {
     margin-bottom: 3px;
-  }
-  .dk {
-    font-size: 170px !important;
-  }
-  .service p {
-    font-size: 41px !important;
   }
 }
 
@@ -521,18 +509,10 @@ input:checked + .slider:before {
  nav {
    height: 65px !important;
  }
-  .service p {
-    font-size: 26px !important;
-    letter-spacing: 1px !important;
-    word-spacing: 1px !important;
-    line-height: 43px !important;
-  }
+
 }
 
 @media screen and (max-width: 600px) {
-  .dk {
-     font-size: 70px !important;
-   }
    #home-p {
     font-size: 8px;
 }
@@ -640,7 +620,7 @@ border-radius: 10px;
 }
 
 .about-indicator h4 {
-  font-size: 300px;
+  font-size: 20vw;
   padding: 0 !important;
   margin: 0 !important;
   position: absolute;
@@ -669,7 +649,7 @@ border-radius: 10px;
 }
 
 .service-indicator h4 {
-  font-size: 300px;
+  font-size: 20vw;
   padding: 0 !important;
   margin: 0 !important;
   position: absolute;
@@ -689,7 +669,7 @@ border-radius: 10px;
 .service p {
   margin: 0;
   color: rgba(22,21,23,.2);
-  font-size: 100px;
+  font-size: 6vw;
   position: absolute;
   left: 6.5%;
   letter-spacing: 3px;
@@ -752,7 +732,7 @@ border-radius: 10px;
 }
 
 .my-work-indicator h4 {
-  font-size: 300px;
+  font-size: 20vw;
   padding: 0 !important;
   margin: 0 !important;
   position: absolute;
@@ -792,7 +772,7 @@ border-radius: 10px;
 }
 
 .contact-me-indicator h4 {
-  font-size: 300px;
+  font-size: 20vw;
   padding: 0 !important;
   margin: 0 !important;
   position: absolute;
