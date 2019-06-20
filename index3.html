@@ -475,6 +475,82 @@ function cursorsonsite() {
 </script>
 
 <script type="text/javascript">
+  var tl21 = new TimelineMax();
+    tl21.from(".about", 0.5, {
+      opacity: 0
+    })
+    tl21.to(".about", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+
+  const scene21 = new ScrollMagic.Scene({
+    triggerElement: ".about"
+  })
+  .setTween(tl21)
+    .addTo(controller);
+    var reverse = scene21.reverse();
+    scene21.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl22 = new TimelineMax();
+    tl22.from(".service", 0.5, {
+      opacity: 0
+    })
+    tl22.to(".service", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+
+  const scene22 = new ScrollMagic.Scene({
+    triggerElement: ".service"
+  })
+  .setTween(tl22)
+    .addTo(controller);
+    var reverse = scene22.reverse();
+    scene22.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl23 = new TimelineMax();
+    tl23.from(".my-work", 0.5, {
+      opacity: 0
+    })
+    tl23.to(".my-work", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+
+  const scene23 = new ScrollMagic.Scene({
+    triggerElement: ".my-work"
+  })
+  .setTween(tl23)
+    .addTo(controller);
+    var reverse = scene23.reverse();
+    scene23.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl24 = new TimelineMax();
+    tl24.from(".contact-me", 0.5, {
+      opacity: 0
+    })
+    tl24.to(".contact-me", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+
+  const scene24 = new ScrollMagic.Scene({
+    triggerElement: ".contact-me"
+  })
+  .setTween(tl24)
+    .addTo(controller);
+    var reverse = scene24.reverse();
+    scene24.reverse(true);
+</script>
+
+<script type="text/javascript">
   var tl4 = new TimelineMax({onUpdate:updatePercentage});
 
   tl4.from("#service-indicator", 0.1, {
