@@ -113,6 +113,8 @@
 <div class="about-indicator" id="about-indicator"><h4 class="dk">About</h4></div>
       <div class="about" id="down">
 
+        <div class="faderin"></div>
+
         <div class="row">
   <div id="column2" class="column">
     <div id="leftdiv" class="cover-image">
@@ -130,6 +132,7 @@
       <!-- my services page -->
 <div class="service-indicator" id="service-indicator"><h4 class="dk">Services</h4></div>
           <div class="service">
+            <div class="faderin1"></div>
             <p class="service-p">I <span class="main-thing-id">Build</span> and <span class="main-thing-id">Design</span><br>responsive <span class="main-thing-id">Websites.</span></p>
             <div id="trigger-about-indicator3"></div>
 
@@ -138,6 +141,7 @@
       <!-- my work page -->
 <div class="my-work-indicator" id="my-work-indicator"><h4 class="dk">Work</h4></div>
           <div class="my-work">
+            <div class="faderin2"></div>
             <p class="my-work-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
 <div id="trigger-about-indicator4"></div>
           </div>
@@ -147,6 +151,7 @@
       <!-- contact page -->
 <div class="contact-me-indicator" id="contact-me-indicator"><h4 class="dk">Contact</h4></div>
           <div class="contact-me">
+            <div class="faderin3"></div>
 <p class="contact-me-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
 
 
@@ -476,16 +481,16 @@ function cursorsonsite() {
 
 <script type="text/javascript">
   var tl21 = new TimelineMax();
-    tl21.from(".about", 0.5, {
+    tl21.from(".about", 1.5, {
       opacity: 0
     })
-    tl21.to(".about", 1, {
+    tl21.to(".about", 1.5, {
       opacity: 1,
       ease: Power2.easeInOut
     });
 
   const scene21 = new ScrollMagic.Scene({
-    triggerElement: ".about"
+    triggerElement: ".faderin"
   })
   .setTween(tl21)
     .addTo(controller);
@@ -495,16 +500,16 @@ function cursorsonsite() {
 
 <script type="text/javascript">
   var tl22 = new TimelineMax();
-    tl22.from(".service", 0.5, {
+    tl22.from(".service", 1.5, {
       opacity: 0
     })
-    tl22.to(".service", 1, {
+    tl22.to(".service", 1.5, {
       opacity: 1,
       ease: Power2.easeInOut
     });
 
   const scene22 = new ScrollMagic.Scene({
-    triggerElement: ".service"
+    triggerElement: ".faderin1"
   })
   .setTween(tl22)
     .addTo(controller);
@@ -514,16 +519,16 @@ function cursorsonsite() {
 
 <script type="text/javascript">
   var tl23 = new TimelineMax();
-    tl23.from(".my-work", 0.5, {
+    tl23.from(".my-work", 1.5, {
       opacity: 0
     })
-    tl23.to(".my-work", 1, {
+    tl23.to(".my-work", 1.5, {
       opacity: 1,
       ease: Power2.easeInOut
     });
 
   const scene23 = new ScrollMagic.Scene({
-    triggerElement: ".my-work"
+    triggerElement: ".faderin2"
   })
   .setTween(tl23)
     .addTo(controller);
@@ -533,16 +538,16 @@ function cursorsonsite() {
 
 <script type="text/javascript">
   var tl24 = new TimelineMax();
-    tl24.from(".contact-me", 0.5, {
+    tl24.from(".contact-me", 1.5, {
       opacity: 0
     })
-    tl24.to(".contact-me", 1, {
+    tl24.to(".contact-me", 1.5, {
       opacity: 1,
       ease: Power2.easeInOut
     });
 
   const scene24 = new ScrollMagic.Scene({
-    triggerElement: ".contact-me"
+    triggerElement: ".faderin3"
   })
   .setTween(tl24)
     .addTo(controller);

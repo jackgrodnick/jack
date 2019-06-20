@@ -866,3 +866,23 @@ object-fit: cover;
       z-index: 1;
       width: 43%;
 }
+
+.faderin {
+  position: absolute;
+  top: -30vh;
+}
+
+.faderin1 {
+  position: absolute;
+  top: -30vh;
+}
+
+.faderin2 {
+  position: absolute;
+  top: -30vh;
+}
+
+.faderin3 {
+  position: absolute;
+  top: -30vh;
+}
