@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jack Grodnick</title>
+    <script src="./src/minified/easing/CustomEase.min.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./style4.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/db6a90e6dd.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/Users/jackgrodnick/Desktop/Jack/lafgkskjldfskljkpgn.png" type="img/png">
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  </head>
+  <body onload="someFunc()">
+
+    <div class="preload">
+      <p class="dave-benz">DAVE BENZ&nbsp<span class="tm">™</span></p>
+      <div id="img">
+          <img class="target-logo" src="/Users/jackgrodnick/Desktop/Jack/target logo.png" alt="targetlogo">
+      </div>
+
+    </div>
+
+
+          <div class="main-content">
+            <nav></nav>
+            <div class="timber">
+              <img class="timberr" src="/Users/jackgrodnick/Desktop/Jack/tw.png" alt="tw">
+              </div>
+              <div class="timber-score"><h1 class="tim">64</h1></div>
+              <div class="slash">
+                <h1 class="idk">-</h1>
+              </div>
+              <div class="76er">
+                <img class="w76err" src="/Users/jackgrodnick/Desktop/Jack/76.png" alt="76">
+              </div>
+              <div class="w76er-score"><h1 class="tims">57</h1></div>
+
+
+              <div class="vid">
+                <video poster="/Users/jackgrodnick/Desktop/Jack/dave_benz-video-thumb.png" controls autoplay>
+                  <source src="/Users/jackgrodnick/Desktop/Jack/davebenz-testvid.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="LIVE">
+                <h1 class="lives">•&nbspLIVE</h1>
+              </div>
+
+              <div class="subtitle">
+                <h1 class="subtitle1">Lorem ipsum dolor sit</h1>
+                <h1 class="subtitle2">consectetur adipisicing elit.</h1>
+                <h1 class="subtitle3">Eaque veniam labore</h1>
+                <h1 class="subtitle4"> amet, repellendus necessitatibus!</h1>
+              </div>
+
+              <div class="idks">
+                <h1 class="h">ABOUT</h1>
+                <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni excepturi, maxime, quasi harum dolorum facilis iusto in odio placeat expedita maiores aspernatur delectus. Id et, quos ab illo laboriosam reiciendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni excepturi, maxime, quasi harum dolorum facilis iusto in odio placeat expedita maiores aspernatur delectus. Id et, quos ab illo laboriosam reiciendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni excepturi, maxime, quasi harum dolorum facilis iusto in odio placeat expedita maiores aspernatur delectus. Id et, quos ab illo laboriosam reiciendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni excepturi, maxime, quasi harum dolorum facilis iusto in odio placeat expedita maiores aspernatur delectus. Id et, quos ab illo laboriosam reiciendis?</p>
+              </div>
+            </div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function someFunc() {
+        fadeOut();
+    }
+</script>
+<script type="text/javascript">
+  function fadeOut() {
+    TweenMax.from(".dave-benz", 2, {
+      scale: 1,
+      delay: 1,
+      opacity: 1
+    });
+    TweenMax.to(".dave-benz", 2, {
+      scale: 0,
+      ease: Power2.easeInOut,
+      delay: 1,
+      opacity: 0
+    });
+
+    TweenMax.from("#img", 2, {
+      scale: 2,
+      top: '91%',
+      delay: 2.5
+    });
+    TweenMax.to("#img", 2, {
+      scale: 0.05,
+      ease: Power2.easeInOut,
+      top: '50%',
+      delay: 2.5
+    });
+
+    TweenMax.to(".preload", 1, {
+      opacity: 0,
+      ease: Power2.easeInOut,
+      delay: 6
+    });
+
+    TweenMax.from(".subtitle1", 1, {
+      delay: 10,
+      opacity: 1,
+      y: 0
+    });
+    TweenMax.to(".subtitle1", 1, {
+      ease: Power2.easeInOut,
+      delay: 10,
+      opacity: 0,
+      y: -20
+    });
+
+    TweenMax.from(".subtitle2", 1, {
+      delay: 10.2,
+      y: 0
+    });
+    TweenMax.to(".subtitle2", 1, {
+      ease: Power2.easeInOut,
+      delay: 10.2,
+      y: -34
+    });
+
+    TweenMax.from(".subtitle3", 1, {
+      delay: 10.4,
+      y: 0,
+      opacity: 0
+    });
+    TweenMax.to(".subtitle3", 1, {
+      ease: Power2.easeInOut,
+      delay: 10.4,
+      y: -34,
+      opacity: 1
+    });
+
+    TweenMax.from(".subtitle4", 1, {
+      delay: 16.4,
+      y: -34,
+      opacity: 0
+    });
+    TweenMax.to(".subtitle4", 1, {
+      ease: Power2.easeInOut,
+      delay: 16.4,
+      y: -68,
+      opacity: 1
+    });
+
+    TweenMax.to(".subtitle2", 1, {
+      ease: Power2.easeInOut,
+      delay: 16,
+      opacity: 0,
+      y: -54
+    });
+    TweenMax.to(".subtitle3", 1, {
+      ease: Power2.easeInOut,
+      delay: 16.2,
+      y: -68
+    });
+
+    TweenMax.from(".subtitle", 1, {
+      delay: 7.8,
+      opacity: 0,
+    });
+    TweenMax.to(".subtitle", 1, {
+      ease: Power2.easeInOut,
+      delay: 7.8,
+      opacity: 1,
+    });
+
+}
+</script>
+
+
+
+
+  </body>
+</html>

@@ -649,7 +649,7 @@ border-radius: 10px;
   box-sizing: border-box;
   width: 100%;
   padding: 3em !important;
-  background-color: #f04e30;
+  background-color: #3f78ff;
   height: 100vh;
   z-index: 0;
 }
@@ -667,7 +667,7 @@ border-radius: 10px;
 
 .service {
   height: 15vh;
-  background: #f04e30;
+  background: #3f78ff;
   position: relative;
   top: 200vh !important;
 }
