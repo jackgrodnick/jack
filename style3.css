@@ -849,6 +849,18 @@ object-fit: cover;
     margin-left: 7%;
   }
   .pic-me {
-    height: 50vh;
+    height: 70vh;
   }
+  .cover-image {
+      width: -webkit-fill-available !important;
+      z-index: 10;
+  }
+}
+
+.cover-image {
+      position: absolute;
+      background: #f8cf48;
+      top: 0;
+      z-index: 10;
+      width: 43%;
 }
