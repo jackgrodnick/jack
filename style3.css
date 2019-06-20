@@ -532,6 +532,9 @@ input:checked + .slider:before {
     font-size: 8px;
     word-spacing: 1.5px;
 }
+  #column2 {
+    display: none;
+  }
 }
 
 .scc {
@@ -798,4 +801,54 @@ border-radius: 10px;
 .contact-mek p {
   margin: 0;
   color: white;
+}
+
+/*testing columns */
+/* Create two equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 43%;
+}
+
+#column1 {
+  margin-left: 7%;
+}
+
+#column2 {
+  margin-right: 7%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-h2 {
+  margin: 0;
+}
+
+.pic-me {
+  width: 100%;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+object-fit: cover;
+
+}
+
+@media screen and (max-width: 1025px) {
+  #column2 {
+    width: 100%;
+    margin: 0;
+  }
+  #column1 {
+    width: 86%;
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  .pic-me {
+    height: 50vh;
+  }
 }
