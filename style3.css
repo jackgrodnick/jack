@@ -566,7 +566,7 @@ input:checked + .slider:before {
 }
 
 .notification {
-  z-index: 1;
+  z-index: 4;
 position: fixed;
 bottom: 0;
 right: -230px;
@@ -580,7 +580,7 @@ border-radius: 10px;
 }
 
 .notification2 {
-  z-index: 1;
+  z-index: 4;
 position: fixed;
 bottom: 0;
 right: -230px;
@@ -598,12 +598,14 @@ border-radius: 10px;
   font-size: 12px;
   font-weight: 300;
   margin: 0;
+  background-color: transparent !important;
 }
 .notification-p2 {
   color: var(--lightBg);
   font-size: 12px;
   font-weight: 300;
   margin: 0;
+  background-color: transparent !important;
 }
 
 #test-line {
@@ -859,8 +861,8 @@ object-fit: cover;
 
 .cover-image {
       position: absolute;
-      background: #f8cf48;
+      background: rgb(235, 235, 235);
       top: 0;
-      z-index: 10;
+      z-index: 1;
       width: 43%;
 }

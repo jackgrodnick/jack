@@ -389,11 +389,65 @@ function cursorsonsite() {
 </script>
 
 <script type="text/javascript">
+  var tl30 = new TimelineMax({onUpdate:updatePercentage});
+
+  tl30.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: '#f8cf48',
+  });
+  tl30.to(".notification, .notification2", 0.2, {
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl30.to(".notification, .notification2", 0.2, {
+  });
+  const scene30 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl30)
+    .addTo(controller);
+    function updatePercentage() {
+      tl30.progress();
+      console.log(tl30.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl31 = new TimelineMax({onUpdate:updatePercentage});
+
+  tl31.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl31.to(".notification, .notification2, .notification-p, .notification-p2", 0.2, {
+    backgroundColor: 'rgb(54, 99, 209)',
+    color: 'white',
+  });
+  tl31.to(".notification, .notification2", 0.2, {
+  });
+
+  const scene31 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator2",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl31)
+    .addTo(controller);
+    function updatePercentage() {
+      tl31.progress();
+      console.log(tl31.progress());
+    }
+</script>
+
+<script type="text/javascript">
   var tl20 = new TimelineMax();
     tl20.from(".pic-me, .cover-image", 1, {
       opacity: 1,
       scale: 0,
-      y: 300
+      y: 400
     })
     tl20.to(".pic-me, .cover-image", 2, {
       opacity: 1,
@@ -401,14 +455,11 @@ function cursorsonsite() {
       ease: Power2.easeInOut,
       y: 0
     });
-    tl20.from(".cover-image", 0.1, {
-      delay: 0
-    });
+
     tl20.to(".cover-image", 1, {
+      delay: 0,
       opacity: 0,
-      ease: Power2.easeInOut,
-      scale: 0,
-      delay: 0
+      ease: Power2.easeInOut
     });
 
   const scene20 = new ScrollMagic.Scene({
@@ -475,6 +526,34 @@ function cursorsonsite() {
 </script>
 
 <script type="text/javascript">
+  var tl32 = new TimelineMax({onUpdate:updatePercentage});
+
+  tl32.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl32.to(".notification, .notification2, .notification-p, .notification-p2", 0.2, {
+    backgroundColor: '#f8cf48',
+    color: 'black',
+  });
+  tl32.to(".notification, .notification2", 0.2, {
+  });
+
+  const scene32 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator3",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl32)
+    .addTo(controller);
+    function updatePercentage() {
+      tl32.progress();
+      console.log(tl32.progress());
+    }
+</script>
+
+<script type="text/javascript">
   var tl6 = new TimelineMax({onUpdate:updatePercentage});
 
   tl6.from("#contact-me-indicator", 0.1, {
@@ -498,6 +577,33 @@ function cursorsonsite() {
     function updatePercentage() {
       tl6.progress();
       console.log(tl6.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl33 = new TimelineMax({onUpdate:updatePercentage});
+
+  tl33.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: '#f8cf48',
+  });
+  tl33.to(".notification, .notification2", 0.2, {
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl33.to(".notification, .notification2", 0.2, {
+  });
+
+  const scene33 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator4",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl33)
+    .addTo(controller);
+    function updatePercentage() {
+      tl33.progress();
+      console.log(tl33.progress());
     }
 </script>
 
