@@ -407,6 +407,12 @@ position: fixed !important;
     cursor: crosshair !important;
 }
 
+@media screen and (max-width: 1366px) {
+  .wrapc {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1365px) {
   #screen {
     font-size: 275px !important;
