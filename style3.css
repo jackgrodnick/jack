@@ -532,11 +532,10 @@ input:checked + .slider:before {
     font-size: 8px;
 }
 .content h1 {
-  font-size: 25px;
+  font-size: 7vw;
   margin: 0;
-  line-height: 34px;
-  word-spacing: 3px;
-  letter-spacing: 1px;
+  word-spacing: 0px;
+  letter-spacing: 0px;
 }
 .content p {
     font-size: 8px;
@@ -544,6 +543,9 @@ input:checked + .slider:before {
 }
   #column2 {
     display: none;
+  }
+  .content {
+    top: 40%;
   }
 }
 
