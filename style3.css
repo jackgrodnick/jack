@@ -532,10 +532,11 @@ input:checked + .slider:before {
     font-size: 8px;
 }
 .content h1 {
-    font-size: 21px;
-    line-height: 35px;
-    word-spacing: 4px;
-    letter-spacing: 1px;
+  font-size: 25px;
+  margin: 0;
+  line-height: 34px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
 }
 .content p {
     font-size: 8px;
