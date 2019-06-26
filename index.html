@@ -8,7 +8,7 @@
     <script src="./src/minified/easing/CustomEase.min.js">
     </script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style3.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
@@ -20,7 +20,8 @@
 <script src="https://kit.fontawesome.com/db6a90e6dd.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="/Users/jackgrodnick/Desktop/Jack/lafgkskjldfskljkpgn.png" type="img/png">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./resources/images/lafgkskjldfskljkpgn.png" type="img/png">
   </head>
   <body onload="followMouse()">
 
@@ -62,6 +63,16 @@
 
 <!-- home page -->
 <div class="allpages fixedstuff" id="box">
+
+<div class="notification">
+<p class="notification-p">Click Logo To Turn<br>On And Off Light Mode.</p>
+</div>
+<div class="notification2">
+<p class="notification-p2">Note This Is Not<br>One Of My Wordpress Sites.</p>
+</div>
+
+<div class="home">
+
   <nav class="notreallyanav">
   <label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"><svg id="screen2" class="scc" xmlns="http://www.w3.org/2000/svg" width="1365" height="1273" viewBox="0 0 1365 1273">
     <defs>
@@ -84,17 +95,6 @@
   <a href="mailto:jack.grodnick@gmail.com?subject=Hi Jack"><button class="myBtn2">START A PROJECT</button></a>
 </nav>
 
-<div class="notification">
-<p class="notification-p">Click Logo To Turn<br>On And Off Light Mode.</p>
-</div>
-<div class="notification2">
-<p class="notification-p2">Note This Is Not<br>One Of My Wordpress Sites.</p>
-</div>
-
-<div class="home">
-
-    <h1 class="homebox">HOME</h1>
-
       <div class="content">
         <p>Hi! 👋 I'm Jack</p>
         <h1 class="introofido">I Make<br>Brands Matter<br>In The Digital World</h1>
@@ -105,30 +105,88 @@
           <p class="light" id="modesforpage">DARK MODE:&nbsp&nbsp&nbsp</p><label class="switch" for="switch"><input class="container_toggle" type="checkbox" id="switch" name="mode"><span class="slider round"></span></label>
         </div>  -->
       </div>
+
+      <div id="trigger-about-indicator"></div>
 <!-- <a class ="downs" href="#down"><img id="arrow" src="/Users/jackgrodnick/Desktop/Jack/mouseindicator.png"></a> -->
       </div>
 
 <!-- about page -->
-<div class="about-indicator" id="about-indicator"><h4>About</h4></div>
+<div class="about-indicator" id="about-indicator"><h4 class="dk">About</h4></div>
       <div class="about" id="down">
-        <p class="about-me-p">im jack and this will be the about me section. Need to make content. more sections will be added after this one.</p>
 
-        <div id="test-line">
+        <div class="faderin"></div>
 
-        </div>
+        <div class="row">
+  <div id="column2" class="column">
+    <div id="leftdiv" class="cover-image">
+    </div>
+          <img id="rightdiv" class="pic-me" src="./resources/images/work.jpg" alt="picture of me">
+  </div>
+  <div id="column1" class="column">
+    <h2 class="about-h2">I’m Jack and I build websites for the modern world.</h2>
+    <p class="mgb">Some text..</p>
 
+    <h4 class="yellow-year">2019</h4>
+    <h1 class="title-ab">9th Grade</h1>
+    <p class="learnp">Earned a 4.0 at Hopkins North Junior high for 9th grade</p>
+
+    <h4 class="yellow-year">2018</h4>
+    <h1 class="title-ab">Learning</h1>
+    <p class="learnp">Finished intensive 6 week Web Development course on Code Cademy</p>
+
+    <h4 class="yellow-year">2018</h4>
+    <h1 class="title-ab">Website</h1>
+    <p class="learnp">Built my first WordPress website</p>
+  </div>
+</div>
+      <div id="trigger-about-indicator2"></div>
       </div>
 
-      <!-- my work page -->
-          <div class="my-work">
+      <!-- my services page -->
+<div class="service-indicator" id="service-indicator"><h4 class="dk">Services</h4></div>
+          <div class="service">
+            <div class="faderin1"></div>
+            <p class="service-p">I <span class="main-thing-id">Build</span> and <span class="main-thing-id">Design</span><br>responsive <span class="main-thing-id">Websites.</span></p>
+            <div id="trigger-about-indicator3"></div>
 
           </div>
+
+      <!-- my work page -->
+<div class="my-work-indicator" id="my-work-indicator"><h4 class="dk">Work</h4></div>
+          <div class="my-work">
+            <div class="faderin2"></div>
+
+            <div class="row2">
+      <div id="column3" class="column1">
+        <div class="image-indicator"><img class="work-pic" src="./resources/images/kllk;kjk;k.png" alt="Hello Samo Website"></div>
+          <div class="image-indicator1"><img class="work-pic2" src="./resources/images/samongwebsite.png" alt="Hello Samo Website"></div>
+      </div>
+      <div id="column4" class="column1">
+        <div class="fixed--">
+          <div class="center this">
+            <h2 class="about-h2">Fade transition from project to project</h2>
+            <p>About Project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div id="trigger-about-indicator4"></div>
+          </div>
+
+
 
       <!-- contact page -->
-
+<div class="contact-me-indicator" id="contact-me-indicator"><h4 class="dk">Contact</h4></div>
           <div class="contact-me">
+            <div class="faderin3"></div>
+<p class="contact-me-p">Hi im jack and this will be my contact page for now my email is jack.grodnick@gmail.com</p>
+
 
           </div>
+
+
           </div>
 
 
@@ -142,7 +200,7 @@
 <script type="text/javascript">
     function someFunc() {
         fadeOut();
-        setTimeout(removeClass, 3500);
+        setTimeout(removeClass, 3000);
         cursorsonsite();
     }
     var box = document.getElementById("box");
@@ -251,6 +309,13 @@
     delay: 19,
     ease: "custom"
   });
+  var rightHeight = document.getElementById('rightdiv').clientHeight;
+  var leftHeight = document.getElementById('leftdiv').clientHeight;
+  if (leftHeight > rightHeight) {
+  document.getElementById('rightdiv').style.height=leftHeight+'px';
+  } else {
+  document.getElementById('leftdiv').style.height=rightHeight+'px';
+  }
 }
 </script>
 
@@ -333,17 +398,17 @@ function cursorsonsite() {
   const controller = new ScrollMagic.Controller({
   });
   CustomEase.create("indicator1", "M0,0 C0,0.435 0,1 0.152,1 0.23,1 0.76,1 0.844,1 0.982,1 1,1 1,0");
-  tl3.from("#about-indicator", 0.1, {
+  tl3.from("#about-indicator", 0.2, {
     opacity: 0,
   });
-  tl3.to("#about-indicator", 0.1, {
+  tl3.to("#about-indicator", 0.2, {
     opacity: 1,
   });
-  tl3.to("#about-indicator h4", 0.1, {
+  tl3.to("#about-indicator h4", 0.2, {
     opacity: 0,
   });
   const scene3 = new ScrollMagic.Scene({
-    triggerElement: "#about-indicator",
+    triggerElement: "#trigger-about-indicator",
     triggerHook: "onLeave",
     duration: "100%"
   })
@@ -357,47 +422,281 @@ function cursorsonsite() {
 </script>
 
 <script type="text/javascript">
-  var tl2 = new TimelineMax();
-    tl2.from("#test-line", .5, {
-      opacity: 0,
-      scale: 0
-    })
-    tl2.to("#test-line", 1, {
-      opacity: 1,
-      backgroundColor: 'black',
-      scale: 1.3,
-      rotation: 45,
-      ease: Power2.easeInOut
-    });
-  const scene2 = new ScrollMagic.Scene({
-    triggerElement: ".about"
+  var tl30 = new TimelineMax({onUpdate:updatePercentage});
+  tl30.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: '#f8cf48',
+  });
+  tl30.to(".notification, .notification2", 0.2, {
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl30.to(".notification, .notification2", 0.2, {
+  });
+  const scene30 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator",
+    triggerHook: "onLeave",
+    duration: "100%"
   })
-  .setTween(tl2)
+  .setPin(".notification")
+  .setTween(tl30)
     .addTo(controller);
-    var reverse = scene2.reverse();
-    scene2.reverse(false);
+    function updatePercentage() {
+      tl30.progress();
+      console.log(tl30.progress());
+    }
 </script>
 
 <script type="text/javascript">
-  var tl2 = new TimelineMax();
-    tl2.from("#test-line", .5, {
-      opacity: 0,
-      scale: 0
-    })
-    tl2.to("#test-line", 1, {
+  var tl31 = new TimelineMax({onUpdate:updatePercentage});
+  tl31.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl31.to(".notification, .notification2, .notification-p, .notification-p2", 0.2, {
+    backgroundColor: 'rgb(54, 99, 209)',
+    color: 'white',
+  });
+  tl31.to(".notification, .notification2", 0.2, {
+  });
+  const scene31 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator2",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl31)
+    .addTo(controller);
+    function updatePercentage() {
+      tl31.progress();
+      console.log(tl31.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl20 = new TimelineMax();
+    tl20.from(".pic-me, .cover-image", 1, {
       opacity: 1,
-      backgroundColor: 'black',
-      scale: 1.3,
-      rotation: 45,
+      scale: 0,
+      y: 400
+    })
+    tl20.to(".pic-me, .cover-image", 2, {
+      opacity: 1,
+      scale: 1,
+      ease: Power2.easeInOut,
+      y: 0
+    });
+    tl20.from(".cover-image", 0, {
+    });
+    tl20.to(".cover-image", 1, {
+      delay: -2,
+      opacity: 0,
       ease: Power2.easeInOut
     });
-  const scene2 = new ScrollMagic.Scene({
+  const scene20 = new ScrollMagic.Scene({
     triggerElement: ".about"
   })
-  .setTween(tl2)
+  .setTween(tl20)
     .addTo(controller);
-    var reverse = scene2.reverse();
-    scene2.reverse(false);
+    var reverse = scene20.reverse();
+    scene20.reverse(false);
+</script>
+
+<script type="text/javascript">
+  var tl21 = new TimelineMax();
+    tl21.from(".about", 1, {
+      opacity: 0
+    })
+    tl21.to(".about", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+  const scene21 = new ScrollMagic.Scene({
+    triggerElement: ".faderin"
+  })
+  .setTween(tl21)
+    .addTo(controller);
+    var reverse = scene21.reverse();
+    scene21.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl22 = new TimelineMax();
+    tl22.from(".service", 1, {
+      opacity: 0
+    })
+    tl22.to(".service", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+  const scene22 = new ScrollMagic.Scene({
+    triggerElement: ".faderin1"
+  })
+  .setTween(tl22)
+    .addTo(controller);
+    var reverse = scene22.reverse();
+    scene22.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl23 = new TimelineMax();
+    tl23.from(".my-work", 1, {
+      opacity: 0
+    })
+    tl23.to(".my-work", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+  const scene23 = new ScrollMagic.Scene({
+    triggerElement: ".faderin2"
+  })
+  .setTween(tl23)
+    .addTo(controller);
+    var reverse = scene23.reverse();
+    scene23.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl24 = new TimelineMax();
+    tl24.from(".contact-me", 1, {
+      opacity: 0
+    })
+    tl24.to(".contact-me", 1, {
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+  const scene24 = new ScrollMagic.Scene({
+    triggerElement: ".faderin3"
+  })
+  .setTween(tl24)
+    .addTo(controller);
+    var reverse = scene24.reverse();
+    scene24.reverse(true);
+</script>
+
+<script type="text/javascript">
+  var tl4 = new TimelineMax({onUpdate:updatePercentage});
+  tl4.from("#service-indicator", 0.1, {
+    opacity: 0,
+  });
+  tl4.to("#service-indicator", 0.1, {
+    opacity: 1,
+  });
+  tl4.to("#service-indicator h4", 0.1, {
+    opacity: 0,
+  });
+  const scene4 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator2",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin("#service-indicator")
+  .setTween(tl4)
+    .addTo(controller);
+    function updatePercentage() {
+      tl4.progress();
+      console.log(tl4.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl5 = new TimelineMax({onUpdate:updatePercentage});
+  tl5.from("#my-work-indicator", 0.1, {
+    opacity: 0,
+  });
+  tl5.to("#my-work-indicator", 0.1, {
+    opacity: 1,
+  });
+  tl5.to("#my-work-indicator h4", 0.1, {
+    opacity: 0,
+  });
+  const scene5 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator3",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin("#my-work-indicator")
+  .setTween(tl5)
+    .addTo(controller);
+    function updatePercentage() {
+      tl5.progress();
+      console.log(tl5.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl32 = new TimelineMax({onUpdate:updatePercentage});
+  tl32.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl32.to(".notification, .notification2, .notification-p, .notification-p2", 0.2, {
+    backgroundColor: '#f8cf48',
+    color: 'black',
+  });
+  tl32.to(".notification, .notification2", 0.2, {
+  });
+  const scene32 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator3",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl32)
+    .addTo(controller);
+    function updatePercentage() {
+      tl32.progress();
+      console.log(tl32.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl6 = new TimelineMax({onUpdate:updatePercentage});
+  tl6.from("#contact-me-indicator", 0.1, {
+    opacity: 0,
+  });
+  tl6.to("#contact-me-indicator", 0.1, {
+    opacity: 1,
+  });
+  tl6.to("#contact-me-indicator h4", 0.1, {
+    opacity: 0,
+  });
+  const scene6 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator4",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin("#contact-me-indicator")
+  .setTween(tl6)
+    .addTo(controller);
+    function updatePercentage() {
+      tl6.progress();
+      console.log(tl6.progress());
+    }
+</script>
+
+<script type="text/javascript">
+  var tl33 = new TimelineMax({onUpdate:updatePercentage});
+  tl33.from(".notification, .notification2", 0, {
+    opcity: 1,
+    backgroundColor: '#f8cf48',
+  });
+  tl33.to(".notification, .notification2", 0.2, {
+    backgroundColor: 'rgb(235, 235, 235)',
+  });
+  tl33.to(".notification, .notification2", 0.2, {
+  });
+  const scene33 = new ScrollMagic.Scene({
+    triggerElement: "#trigger-about-indicator4",
+    triggerHook: "onLeave",
+    duration: "100%"
+  })
+  .setPin(".notification")
+  .setTween(tl33)
+    .addTo(controller);
+    function updatePercentage() {
+      tl33.progress();
+      console.log(tl33.progress());
+    }
 </script>
 
 
