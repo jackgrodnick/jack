@@ -707,6 +707,7 @@ border-radius: 10px;
     transform: translate(0, -50%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+        z-index: 1000;
 }
 
 .main-thing-id {
@@ -839,6 +840,7 @@ border-radius: 10px;
 #column1 {
   margin-left: 7%;
   float: left;
+  z-index: 10000;
 }
 
 @media screen and (min-width: 1026px) {
