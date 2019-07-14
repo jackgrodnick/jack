@@ -840,7 +840,6 @@ border-radius: 10px;
 #column1 {
   margin-left: 7%;
   float: left;
-  z-index: 10000;
 }
 
 @media screen and (min-width: 1026px) {
